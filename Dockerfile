@@ -17,7 +17,6 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update
 RUN apt-get dist-upgrade -y
 RUN apt-get install -qy -o APT::Install-Recommend=false -o APT::Install-Suggests=false \
-    build-essential gcc \
     apt-transport-https \
     apt-utils \
     ca-certificates \
@@ -42,3 +41,4 @@ COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT ["entrypoint.sh"]
+CMD ["bash"]
