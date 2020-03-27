@@ -7,7 +7,10 @@ Ready to use with Ansible Molecule:
 ```yml
 platforms:
   - name: ubuntu18
-    image: bitbar/ubupy:latest
+    image: bitbar/ubupy:bionic
+    pre_build_image: true
+  - name: ubuntu16
+    image: bitbar/ubupy:xenial
     pre_build_image: true
 ```
 

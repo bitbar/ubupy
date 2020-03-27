@@ -1,6 +1,6 @@
 # bitbar/ubupy
 
-# based on Ubuntu 18.04 LTS
+# based on Ubuntu Bionic
 FROM ubuntu:bionic
 
 LABEL vendor="Bitbar Inc" \
