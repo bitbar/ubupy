@@ -29,8 +29,8 @@ RUN apt-get install -qy -o APT::Install-Recommend=false -o APT::Install-Suggests
 # install Python
 RUN apt-get update && apt-get dist-upgrade -y
 RUN apt-get update && apt-get install -qy -o APT::Install-Recommend=false -o APT::Install-Suggests=false \
-    python python-pip \
-    python3 python3-pip
+    python python-pip python-dev \
+    python3 python3-pip python3-dev
 
 # confd
 ADD https://github.com/kelseyhightower/confd/releases/download/v0.16.0/confd-0.16.0-linux-amd64 /usr/local/bin/confd
@@ -42,3 +42,5 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT ["entrypoint.sh"]
 CMD ["bash"]
+
+ENV SHELL /bin/bash

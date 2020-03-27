@@ -2,10 +2,23 @@
 
 (Ubu)ntu based Docker image with (Py)thon.
 
+Ready to use with Ansible Molecule:
+
+```yml
+platforms:
+  - name: ubuntu18
+    image: bitbar/ubupy:latest
+    pre_build_image: true
+```
+
 ## Info
 
 * Based on Ubuntu LTS (18.04)
-* Python 2.7 and 3 + pip
+* Python 2.7 and 3:
+
+  * pip
+  * dev
+
 * [confd](https://github.com/kelseyhightower/confd) onboard
 * other tools:
 
@@ -16,6 +29,11 @@
   * tree
 
 ## Changelog
+
+* **1.1.0**
+
+  * Added -dev packages
+  * Added `ENV SHELL`
 
 * **1.0.1**
 
