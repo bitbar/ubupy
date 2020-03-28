@@ -16,22 +16,44 @@ platforms:
 
 ## Info
 
-* Based on Ubuntu LTS (18.04)
-* Python 2.7 and 3:
+* Based on Ubuntu LTS
+* Installed python packages:
 
-  * pip
-  * dev
+  * Python 2.7
 
-* [confd](https://github.com/kelseyhightower/confd) onboard
-* other tools:
+    * `python`
+    * `python-pip`
+    * `python-dev`
+    * `python-apt`
 
-  * curl
-  * wget
-  * git
-  * gcc
-  * tree
+  * Python 3.6
+
+    * `python3`
+    * `python3-pip`
+    * `python3-dev`
+    * `python3-apt`
+
+* Other installed packages:
+
+  * `sudo`
+  * `bash`
+  * `ca-certificates`
+  * `aptitude`
+  * `apt-transport-https`
+  * `apt-utils`
+  * `iproute2`
+  * `ca-certificates`
+  * `tree`
+  * `git`
+  * `curl`
+  * `wget`
+  * `tzdata`
 
 ## Changelog
+
+* **1.1.1**
+
+  * Removing `ENTRYPOINT` as Ansible Molecule wasn't working with it
 
 * **1.1.0**
 
