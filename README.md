@@ -6,6 +6,9 @@ Ready to use with Ansible Molecule:
 
 ```yml
 platforms:
+  - name: ubuntu20
+    image: bitbar/ubupy:focal
+    pre_build_image: true
   - name: ubuntu18
     image: bitbar/ubupy:bionic
     pre_build_image: true
@@ -19,7 +22,7 @@ platforms:
 * Based on Ubuntu LTS
 * Installed python packages:
 
-  * Python 2.7
+  * Python 2.7 (depracated since Focal)
 
     * `python`
     * `python-pip`

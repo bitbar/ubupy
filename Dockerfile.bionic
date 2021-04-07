@@ -3,9 +3,9 @@
 # based on Ubuntu Bionic
 FROM ubuntu:bionic
 
-LABEL vendor="Bitbar Inc" \
+LABEL vendor="SmartBear Software" \
       description="Ubuntu LTS based Docker image with Python" \
-      maintainer="Marek Sierociński <marek.sierocinski@bitbar.com>"
+      maintainer="Marek Sierociński <marek.sierocinski@smartbear.com>"
 
 ENV TERM=xterm-256color \
     PATH="$PATH:/usr/local/bin"
